@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +9,43 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 </head>
 <body>
-    <nav class="menu-bar border">
-        <header class="logo-home border"><a href="index.html" rel="home">Sydney</a></header>
-        <nav class="menu border">
-            <button class="btn-menu border"><span>Home</span></button>
-            <button class="btn-menu border"><span>About</span></button>
-            <button class="btn-menu border"><span>Blog</span></button>
-            <button class="btn-menu border"><span>Shop</span></button>
+    <nav class="menu-bar">
+        <header class="logo-home"><a href="index.html" rel="home">Sydney</a></header>
+        <nav class="menu">
+                <button class="btn-menu"><span><a href="#home">Home</a></span></button>
+                <button class="btn-menu"><span><a href="#about">About</a></span></button>
+                <button class="btn-menu"><span><a href="#blog">Blog</a></span></button>
+                <button class="btn-menu"><span><a href="#shop">Shop</a></span></button>
+            
+            <div class="btn-menu2">
+                <button><span><i class= material-symbols-outlined>search</i></span></button>
+                <button><span><i class= material-symbols-outlined>person</i></span></button>
+                <button><span><i class= material-symbols-outlined>shop</i></span></button>
+            </div>
         </nav>
-        <nav class="menu-2">
-            <button class="btn-menu2 border"><span><i class= material-symbols-outlined>search</i></span></button>
-            <button class="btn-menu2 border"><span><i class= material-symbols-outlined>person</i></span></button>
-            <button class="btn-menu2 border"><span><i class= material-symbols-outlined>shop</i></span></button>
-        </nav>        
+ 
     </nav>
-    <nav class="first-line border">
-        <div>
-            <label>Upgrade your wardrobe <br>with new collections</label>
-            <p>starting at $19.99</p>
-        </div>
-        <div><img src="img/h1-1.jpg.webp"></div>
-        <button><span>Shop now<i >arrow</i></span></button>
-    </nav>
+    <main>
+        <section id="home">
+            <div><img class="fade-in fade-out" src="img/h1-1.webp"></div>
+            <button class="fade-in fade-out"><label>Shop now</label></button>
+            <div>
+                <label class="fade-in fade-out">Upgrade your wardrobe <br>with new collections</label>
+                <p class="fade-in">starting at $19.99</p>
+            </div>
+        </section>
+        <section class="blog" id="blog">
+            <div class="blog-left">
+                <img src="img/h2-1.jpg" style="width: 530px; object-fit: cover;">
+                <img src="img/h2-3.webp" style="width: 530px; object-fit: cover;">
+            </div>
+            <div class="blog-right">
+                <img src="img/h2-2.jpg" style="width: 520px; object-fit: cover;">
+                <img src="img/h2-4.webp" style="width: 520px; object-fit: cover;">
+            </div>
+        </section>  
+        <section id="shop"></section>
+        <section id="about"></section>
+    </main>
 </body>
 </html>
